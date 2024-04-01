@@ -1,0 +1,144 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(210, 36%, 96%);
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h2,
+h4{
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    line-height: 1.25px;
+    margin-bottom: 0.75rem;
+}
+
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p{
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
+}
+
+.section{
+    padding: 3rem 0;
+}
+
+.section-center{
+    width: 90vw;       /*2000*/ 
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-img{
+    margin-bottom: 2rem;
+}
+
+.about-img img{
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 20rem;
+}
+
+@media screen and (min-width:992px){   /*apply these css property for width equal to or greather than 992px*/
+    .about-img{
+        margin-bottom: 0;
+    }
+
+    .about-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.about{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+}
+
+.btn-container{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius:0.5rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn{
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    cursor: pointer;
+    background-color: hsl(212, 33%, 89%);
+    transition: all 0.3s linear;
+    letter-spacing: 0.25rem;
+}
+
+.tab-btn:nth-child(1){
+    border-top-left-radius:0.5rem ;
+   
+}
+
+.tab-btn:nth-child(3){
+    border-top-right-radius:0.5rem ;
+}
+
+.tab-btn:hover:not(.active){
+    background-color: hsl(205,100%,96%);
+    color: #49a6e9;
+}
+
+.about-content{
+    padding: 2rem 1.5rem;
+}
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
+
+.tab-btn.active{
+    background-color: #fff;
+}

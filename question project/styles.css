@@ -1,0 +1,101 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(244, 242, 242);
+    line-height: 1.5;
+    font-size: 0.975rem;
+}
+
+h2{
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    font-size: 2rem;
+    color: rgb(165, 153, 42);
+    text-align: center;
+}
+
+p{
+    margin-bottom: 1.25rem;
+    color: gray;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.section-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+.question{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.question-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+.question-title p{
+    letter-spacing: 0.25rem;
+    color: rgb(22, 32, 94);
+    margin-bottom: 0;
+}
+
+.question-btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: rgb(183, 163, 47);
+    transition: all 0.3s linear ;
+}
+
+.question-btn:hover{
+    transform: rotate(90deg);
+}
+
+.question-text{
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p{
+    margin-bottom: 0;
+}
+
+/*these will be used in JS*/
+
+.question-text{
+    display: none;
+}
+
+.show .question-text{
+    display: block;
+   }
+   
+.minus-icon{
+    display: none;
+}
+.show .minus-icon{
+    display: inline;
+}
+
+.show .plus-icon{
+    display: none;
+}

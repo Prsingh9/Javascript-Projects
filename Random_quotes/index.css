@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(174, 211, 199);
+}
+div{
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+}
+
+p{
+    font-size: 35px;
+}
+
+button{
+    width: 250px;
+    height: 80px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+background-color: green;
+cursor: pointer;
+}
